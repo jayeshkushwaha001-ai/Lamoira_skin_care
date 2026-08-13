@@ -1,1143 +1,1139 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Anand Lamoria | Lamoria's Skin & Hair Clinic | Best Dermatologist in Jodhpur</title>
-    <meta name="description"
-        content="Official Website of Dr. Anand Lamoria - Leading Dermatologist & Hair Transplant Surgeon in Shastri Nagar, Jodhpur. Hair Transplant, Acne Scars, Laser, HydraFacial & GFC Therapy.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dr. Anand Lamoria | MD Dermatologist & Cosmetologist Jodhpur</title>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0fdfa',
-                            100: '#ccfbf1',
-                            500: '#14b8a6',
-                            600: '#0d9488',
-                            700: '#0f766e',
-                            800: '#115e59',
-                            900: '#134e4a',
-                            navy: '#0a192f',
-                            accent: '#d97706'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        .glass-header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(12px);
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #0f766e 0%, #0284c7 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero-bg {
-            background: radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 20% 80%, rgba(2, 132, 199, 0.06) 0%, transparent 50%);
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
-    <!-- Fullscreen Preloader -->
-    <div id="preloader"
-        class="fixed inset-0 z-[100] bg-white flex flex-col items-center justify-center transition-opacity duration-500">
-        <!-- Spinner Ring -->
-        <div class="w-12 h-12 border-4 border-brand-200 border-t-brand-700 rounded-full animate-spin"></div>
-        <p class="mt-4 text-xs font-semibold text-slate-600 tracking-wider uppercase">Loading Dr. Lamoria's Clinic...
-        </p>
-    </div>
+<body>
+
     <!-- Top Announcement Bar -->
-    <div class="bg-brand-navy text-slate-200 text-xs sm:text-sm py-2.5 px-4 border-b border-slate-800">
-        <div
-            class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
-            <div class="flex items-center gap-4 flex-wrap justify-center">
-                <span><i class="fa-solid fa-location-dot text-brand-500 mr-1.5"></i> Sector-D, Shastri Nagar,
+    <div class="top-announcement">
+        <div class="container top-flex">
+            <div class="top-info">
+                <i class="fa-solid fa-location-dot"></i> <span>Govt Quarters 3/2, Sector-D, Shastri Nagar,
                     Jodhpur</span>
-                <span class="hidden md:inline"><i class="fa-solid fa-clock text-brand-500 mr-1.5"></i> Mon - Sat: 10:00
-                    AM - 7:30 PM</span>
             </div>
-            <div class="flex items-center gap-4">
-                <a href="tel:+918955328904" class="hover:text-brand-500 transition"><i
-                        class="fa-solid fa-phone mr-1"></i> +91 89553 28904</a>
-                <span class="text-slate-600">|</span>
-                <span
-                    class="bg-emerald-500/20 text-emerald-400 text-xs px-2 py-0.5 rounded-full font-medium flex items-center gap-1">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Clinic Open Today
-                </span>
+            <div class="top-contact">
+                <a href="tel:+918955328904" class="phone-link">
+                    <i class="fa-solid fa-phone"></i> +91 89553 28904
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- Main Navigation Bar -->
-    <header class="sticky top-0 z-40 glass-header border-b border-slate-200/80 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-
-            <!-- Real Brand Logo & Title (Fixed Mobile Visibility) -->
-            <a href="#" class="flex items-center gap-2 sm:gap-3 group">
-                <img src="logo.jpg" alt="Dr. Lamoria's Skin & Hair Clinic Logo"
-                    class="h-10 sm:h-12 w-auto object-contain rounded-lg"
-                    onerror="this.onerror=null; this.src='https://via.placeholder.com/150x50?text=Dr.+Lamoria%27s';">
-                <div class="flex flex-col">
-                    <span class="block text-sm sm:text-lg font-extrabold text-slate-900 leading-tight">Dr.
-                        Lamoria's</span>
-                    <span
-                        class="block text-[10px] sm:text-xs font-semibold text-brand-700 tracking-wider uppercase">Skin,
-                        Hair &
-                        Cosmetic Clinic</span>
+    <!-- Clean Responsive Navbar with Custom Logo -->
+    <header class="main-header">
+        <div class="container nav-flex">
+            <a href="#" class="brand-box">
+                <img src="logo.jpg" alt="Dr. Lamoria Logo" class="brand-logo-img"
+                    onerror="this.style.display='none'; document.getElementById('altBrandIcon').style.display='flex';">
+                <div class="brand-icon" id="altBrandIcon" style="display:none;"><i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">Dr. Lamoria's</span>
+                    <span class="brand-subtitle">Skin, Hair & Cosmetic Clinic</span>
                 </div>
             </a>
 
-            <!-- Desktop Nav Links -->
-            <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-600 text-sm">
-                <a href="#about" class="hover:text-brand-700 transition">About Doctor</a>
-                <a href="#treatments" class="hover:text-brand-700 transition">Treatments</a>
-                <a href="#gfc-banner" class="hover:text-brand-700 transition">GFC Therapy</a>
-                <a href="#reviews" class="hover:text-brand-700 transition">Reviews</a>
-                <a href="#faqs" class="hover:text-brand-700 transition">FAQs</a>
-                <a href="#contact" class="hover:text-brand-700 transition">Contact</a>
+            <nav class="desktop-nav">
+                <a href="#about">About Dr. Anand</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#cosmetics">Cosmetics</a>
+                <a href="#dermatosurgery">Dermatosurgery</a>
+                <a href="#hair-transplant">Hair Care</a>
+                <a href="#insta-feed">Instagram</a>
+                <a href="#reviews">Reviews</a>
             </nav>
 
-            <!-- Header Action CTA -->
-            <div class="hidden sm:flex items-center gap-3">
-                <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20would%20like%20to%20book%20a%20consultation."
-                    target="_blank"
-                    class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-md shadow-emerald-600/20 transition flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>WhatsApp Booking</span>
-                </a>
+            <div class="header-actions">
+                <button onclick="openBookingModal('General Consultation')" class="nav-btn-wa">
+                    <i class="fa-regular fa-calendar-check"></i> <span>Book Appointment</span>
+                </button>
+                <button class="mobile-hamburger" id="menuBtn" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-
-            <!-- Mobile Menu Toggle Button -->
-            <button id="menu-btn" class="lg:hidden text-slate-700 text-2xl focus:outline-none p-2"
-                aria-label="Toggle Menu">
-                <i class="fa-solid fa-bars" id="menu-icon"></i>
-            </button>
         </div>
 
-        <!-- Mobile Dropdown Navigation -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3">
-            <a href="#about" onclick="closeMenu()"
-                class="block text-slate-700 hover:text-brand-700 font-medium py-1">About Doctor</a>
-            <a href="#treatments" onclick="closeMenu()"
-                class="block text-slate-700 hover:text-brand-700 font-medium py-1">Treatments</a>
-            <a href="#gfc-banner" onclick="closeMenu()"
-                class="block text-slate-700 hover:text-brand-700 font-medium py-1">GFC Hair Treatment</a>
-            <a href="#reviews" onclick="closeMenu()"
-                class="block text-slate-700 hover:text-brand-700 font-medium py-1">Patient Reviews</a>
-            <a href="#faqs" onclick="closeMenu()"
-                class="block text-slate-700 hover:text-brand-700 font-medium py-1">FAQs</a>
-            <a href="#contact" onclick="closeMenu()"
-                class="block text-slate-700 hover:text-brand-700 font-medium py-1">Contact & Map</a>
-            <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20would%20like%20to%20book%20a%20consultation."
-                class="block w-full text-center bg-emerald-600 text-white font-semibold py-2.5 rounded-xl mt-2">
-                <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Booking
-            </a>
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-drawer" id="mobileDrawer">
+            <a href="#about" class="drawer-link">About Dr. Anand</a>
+            <a href="#achievements" class="drawer-link">Achievements & Credentials</a>
+            <a href="#cosmetics" class="drawer-link">Cosmetic Aesthetics</a>
+            <a href="#dermatosurgery" class="drawer-link">Dermatosurgery</a>
+            <a href="#hair-transplant" class="drawer-link">Hair Transplant & GFC</a>
+            <a href="#insta-feed" class="drawer-link">Instagram Updates</a>
+            <a href="#reviews" class="drawer-link">Patient Reviews</a>
+            <button onclick="openBookingModal('General Consultation')" class="drawer-wa-btn">
+                <i class="fa-regular fa-calendar-check"></i> Book Appointment
+            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative hero-bg pb-16 lg:pb-24 overflow-hidden">
+    <!-- Top Promotional Banner Showcase -->
+    <div class="top-showcase-wrapper">
+        <div class="swiper top-banner-swiper">
+            <div class="swiper-wrapper">
 
-        <!-- Unsplash Skin Care Top Banner Image -->
-        <div class="w-full h-48 sm:h-64 lg:h-80 relative overflow-hidden mb-8">
-            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1600&q=80"
-                alt="Skin Care Aesthetic Header" class="w-full h-full object-cover object-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-50 via-slate-900/20 to-transparent"></div>
+                <!-- Banner Slide 1 -->
+                <div class="swiper-slide banner-slide">
+                    <a href="#">
+                        <img src="https://laserskinspecialist.com/wp-content/uploads/2021/12/chemical-peels-kasia-fernandez-laser-skin-specialist.jpeg"
+                            alt="Dr. Lamoria Skin Care Clinic Banner 1" class="banner-img">
+                    </a>
+                </div>
+
+                <!-- Banner Slide 2 -->
+                <div class="swiper-slide banner-slide">
+                    <a href="#">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80"
+                            alt="Acne & Laser Treatment Banner" class="banner-img">
+                    </a>
+                </div>
+                <div class="swiper-slide banner-slide">
+                    <a href="#">
+                        <img src="https://cutis.com.au/wp-content/uploads/2023/04/ota-birthmark-removal-before-after.jpg"
+                            alt="Acne & Laser Treatment Banner" class="banner-img">
+                    </a>
+                </div>
+
+                <!-- Banner Slide 3 -->
+                <div class="swiper-slide banner-slide">
+                    <a href="#">
+                        <img src="https://cdn.shopify.com/s/files/1/0871/7713/4375/files/Mesotherapy_Gun_for_Hair_3.jpg"
+                            alt="Hair Restoration Banner" class="banner-img">
+                    </a>
+                </div>
+
+            </div>
+            <!-- Dots Pagination -->
+            <div class="swiper-pagination top-banner-pagination"></div>
         </div>
+    </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
+    <!-- Hero Section -->
+    <section class="hero-wrapper">
+        <div class="container hero-grid">
+            <div class="hero-left reveal-left">
+                <div class="gold-pill">
+                    <i class="fa-solid fa-medal"></i> Gold Medalist Dermatologist & Cosmetologist
+                </div>
 
-                <!-- Left Hero Text -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div
-                        class="inline-flex items-center gap-2 bg-brand-50 border border-brand-200 text-brand-800 text-xs sm:text-sm font-semibold px-3.5 py-1.5 rounded-full shadow-sm">
-                        <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
-                        Top Rated Dermatologist & Hair Specialist in Jodhpur
+                <h1 class="hero-heading">
+                    <span class="tw-target" data-text="Advanced Clinical Aesthetics & Dermatology"></span>
+                </h1>
+
+                <p class="hero-subtext">
+                    Spearheaded by <strong>Dr. Anand Lamoria (MD Skin & V.D.)</strong> — Assistant Professor at
+                    Dept. of
+                    Dermatology, Dr. S.N. Medical College & MDM Hospital, Jodhpur.
+                </p>
+
+                <div class="google-trust-card">
+                    <div class="google-svg">
+                        <svg viewBox="0 0 24 24" width="28" height="28">
+                            <path fill="#4285F4"
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                            <path fill="#34A853"
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                            <path fill="#FBBC05"
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                            <path fill="#EA4335"
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                        </svg>
                     </div>
-
-                    <h1
-                        class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                        Healthy Skin & Natural Hair Restored by <span class="gradient-text">Dr. Anand Lamoria</span>
-                    </h1>
-
-                    <p
-                        class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Led by <strong>Dr. Anand Lamoria</strong> (MD Dermatologist), Lamoria's Skin, Hair & Cosmetic
-                        Clinic provides advanced, evidence-based treatments for Hair Loss, Hair Transplant, GFC Therapy,
-                        Acne Scars, and Laser Care in Shastri Nagar, Jodhpur.
-                    </p>
-
-                    <!-- Trust Highlights Badge Bar -->
-                    <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6">
-                        <div
-                            class="flex items-center gap-2.5 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-sm">
-                            <!-- Fixed Google SVG Icon -->
-                            <div
-                                class="w-9 h-9 rounded-lg bg-slate-50 border border-slate-100 flex items-center justify-center shrink-0">
-                                <svg class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path fill="#4285F4"
-                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-                                    <path fill="#34A853"
-                                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-                                    <path fill="#FBBC05"
-                                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
-                                    <path fill="#EA4335"
-                                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
-                                </svg>
-                            </div>
-                            <div class="text-left">
-                                <p class="text-sm font-bold text-slate-900">4.6 / 5.0 Rating</p>
-                                <p class="text-xs text-slate-500">177+ Verified Reviews</p>
-                            </div>
+                    <div class="trust-details">
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i>
+                            <strong>4.6 / 5.0</strong>
                         </div>
-                        <div
-                            class="flex items-center gap-2.5 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-sm">
-                            <div
-                                class="w-9 h-9 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-base">
-                                <i class="fa-solid fa-user-doctor"></i>
-                            </div>
-                            <div class="text-left">
-                                <p class="text-sm font-bold text-slate-900">10+ Years Exp.</p>
-                                <p class="text-xs text-slate-500">Qualified MD Specialist</p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex items-center gap-2.5 bg-white px-4 py-2.5 rounded-xl border border-slate-200 shadow-sm">
-                            <div
-                                class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-base">
-                                <i class="fa-solid fa-heart-pulse"></i>
-                            </div>
-                            <div class="text-left">
-                                <p class="text-sm font-bold text-slate-900">1000+ Cases</p>
-                                <p class="text-xs text-slate-500">Painless Procedures</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Call To Actions -->
-                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20want%20to%20book%20an%20appointment%20for%20skin/hair%20treatment."
-                            target="_blank"
-                            class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-600/25 transition transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-3">
-                            <i class="fa-brands fa-whatsapp text-xl"></i>
-                            <span>Book Consultation on WhatsApp</span>
-                        </a>
-                        <a href="#treatments"
-                            class="w-full sm:w-auto bg-white hover:bg-slate-100 text-slate-800 font-semibold text-base px-7 py-3.5 rounded-xl border border-slate-300 shadow-sm transition text-center">
-                            Explore Treatments
-                        </a>
+                        <span>Based on 177+ Verified Google Patient Reviews</span>
                     </div>
                 </div>
 
-                <!-- Right Hero Card / Quick Consultation Card -->
-                <div class="lg:col-span-5">
-                    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200/80 relative">
-                        <div
-                            class="absolute -top-3 right-6 bg-brand-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
-                            Fast Appointment
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Book Your Consultation</h3>
-                        <p class="text-xs text-slate-500 mb-6">Fill in your details to directly connect with Dr. Anand
-                            Lamoria on WhatsApp.</p>
+                <div class="hero-cta-group">
+                    <button onclick="openBookingModal('Priority Consultation')" class="btn-main-primary">
+                        <i class="fa-solid fa-calendar-days"></i> Priority Consultation
+                    </button>
+                    <a href="#cosmetics" class="btn-main-secondary">Explore Treatments</a>
+                </div>
+            </div>
 
-                        <form id="hero-booking-form" onsubmit="sendWhatsAppBooking(event)" class="space-y-4">
-                            <div>
-                                <label
-                                    class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Your
-                                    Full Name</label>
-                                <input type="text" id="patient_name" required placeholder="e.g. Ramesh Sharma"
-                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 text-sm outline-none transition">
-                            </div>
-                            <div>
-                                <label
-                                    class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Phone
-                                    / WhatsApp Number</label>
-                                <input type="tel" id="patient_phone" required placeholder="e.g. 98765 43210"
-                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 text-sm outline-none transition">
-                            </div>
-                            <div>
-                                <label
-                                    class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Treatment
-                                    Required</label>
-                                <select id="patient_service" required
-                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 text-sm outline-none transition text-slate-700">
-                                    <option value="">Select Treatment...</option>
-                                    <option value="GFC Hair Treatment & PRP">GFC Hair Treatment & PRP</option>
-                                    <option value="Hair Transplant Surgery">Hair Transplant Surgery</option>
-                                    <option value="Acne & Acne Scars Treatment">Acne & Acne Scars Treatment</option>
-                                    <option value="Laser Treatment & Carbon Laser">Laser Treatment & Carbon Laser
-                                    </option>
-                                    <option value="HydraFacial & Skin Brightening">HydraFacial & Skin Brightening
-                                    </option>
-                                    <option value="General Skin Consultation">General Skin / Allergy Consultation
-                                    </option>
-                                </select>
-                            </div>
-                            <div>
-                                <label
-                                    class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Preferred
-                                    Date</label>
-                                <input type="date" id="patient_date" required
-                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 text-sm outline-none transition text-slate-700">
-                            </div>
-
-                            <button type="submit"
-                                class="w-full bg-brand-700 hover:bg-brand-800 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-brand-700/25 transition text-sm flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-calendar-check"></i>
-                                <span>Confirm Appointment via WhatsApp</span>
-                            </button>
-                        </form>
-
-                        <div
-                            class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                            <span><i class="fa-solid fa-shield-halved text-emerald-600 mr-1"></i> 100%
-                                Confidential</span>
-                            <span><i class="fa-solid fa-bolt text-amber-500 mr-1"></i> Instant Response</span>
-                        </div>
+            <div class="hero-right reveal-right">
+                <div class="doctor-image-container">
+                    <img src="doctor_photo.jpeg" alt="Dr. Anand Lamoria MD Dermatologist" class="doc-portrait"
+                        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80';">
+                    <div class="doc-caption-strip">
+                        <h3>Dr. Anand Lamoria</h3>
+                        <p>M.B.B.S., M.D. (Skin & V.D.) | Assistant Professor</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Stats Bar -->
-    <section class="bg-brand-navy text-white py-10 border-y border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="space-y-1">
-                    <p class="text-3xl sm:text-4xl font-extrabold text-brand-500">1000+</p>
-                    <p class="text-xs sm:text-sm text-slate-300 font-medium">Patients Treated</p>
-                </div>
-                <div class="space-y-1">
-                    <p class="text-3xl sm:text-4xl font-extrabold text-brand-500">4.6★</p>
-                    <p class="text-xs sm:text-sm text-slate-300 font-medium">177+ Google Reviews</p>
-                </div>
-                <div class="space-y-1">
-                    <p class="text-3xl sm:text-4xl font-extrabold text-brand-500">100%</p>
-                    <p class="text-xs sm:text-sm text-slate-300 font-medium">Scientifically Proven Care</p>
-                </div>
-                <div class="space-y-1">
-                    <p class="text-3xl sm:text-4xl font-extrabold text-brand-500">Top Rated</p>
-                    <p class="text-xs sm:text-sm text-slate-300 font-medium">In Shastri Nagar, Jodhpur</p>
-                </div>
+    <section class="stats-strip reveal-up">
+        <div class="container stats-flex">
+            <div class="stat-box">
+                <div class="num"><span class="counter" data-target="10">0</span>+</div>
+                <div class="lbl">Years Experience</div>
+            </div>
+            <div class="stat-box">
+                <div class="num"><span class="counter" data-target="1000">0</span>+</div>
+                <div class="lbl">Surgeries Completed</div>
+            </div>
+            <div class="stat-box">
+                <div class="num"><span class="counter" data-target="177">0</span>+</div>
+                <div class="lbl">5-Star Google Reviews</div>
+            </div>
+            <div class="stat-box">
+                <div class="num"><span class="counter" data-target="100">0</span>%</div>
+                <div class="lbl">Ethical Medical Care</div>
             </div>
         </div>
     </section>
 
-    <!-- Doctor Profile Section (With Real Doctor Photo Integration) -->
-    <section id="about" class="py-16 sm:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
+    <!-- Doctor Profile -->
+    <section class="section-padding bg-white" id="about">
+        <div class="container">
+            <div class="section-title-box text-center">
+                <span class="tag-label">Medical Leadership</span>
+                <h2><span class="tw-target" data-text="About Dr. Anand Lamoria"></span></h2>
+                <p>Senior Academician & Certified Dermatosurgeon in Jodhpur</p>
+            </div>
 
-                <!-- Real Doctor Photo Container -->
-                <div class="lg:col-span-5">
-                    <div class="relative max-w-md mx-auto">
-                        <div
-                            class="absolute -inset-2 bg-gradient-to-r from-brand-500 to-sky-500 rounded-3xl blur-lg opacity-25">
-                        </div>
-                        <div
-                            class="relative bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-2xl p-3">
-
-                            <!-- Doctor Image (doctor_photo.jpg) -->
-                            <img src="doctor_photo.jpeg"
-                                alt="Dr. Anand Lamoria - Dermatologist & Hair Specialist in Jodhpur"
-                                class="w-full h-auto object-cover rounded-2xl shadow-md"
-                                onerror="this.onerror=null; this.src='banner.jpg';">
-
-                            <div class="p-4 text-center bg-slate-900 text-white rounded-2xl mt-3">
-                                <h3 class="text-xl font-bold">Dr. Anand Lamoria</h3>
-                                <p class="text-brand-400 font-semibold text-xs">MD Dermatologist & Hair Transplant
-                                    Surgeon</p>
-                                <p class="text-xs text-slate-400 mt-1">Specialist in GFC Therapy, Laser Surgery & Hair
-                                    Restoration</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Doctor Details Text -->
-                <div class="lg:col-span-7 space-y-6">
-                    <div
-                        class="inline-block text-xs font-extrabold uppercase tracking-widest text-brand-700 bg-brand-50 px-3 py-1 rounded-md">
-                        Meet Your Specialist
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
-                        Compassionate Care Meets <span class="gradient-text">Advanced Medical Skill</span>
-                    </h2>
-                    <p class="text-slate-600 text-base leading-relaxed">
-                        <strong>Dr. Anand Lamoria</strong> is recognized as one of the best dermatologists in Jodhpur,
-                        known for his patient-first approach, thorough diagnosis, and exceptionally clear treatment
-                        explanations.
+            <div class="about-card-wrapper">
+                <div class="about-bio-card reveal-left">
+                    <div class="bio-icon-header"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h3>Academic & Medical Appointments</h3>
+                    <p class="bio-text">
+                        Dr. Anand Lamoria holds M.B.B.S. & M.D. (Skin & V.D.). He currently serves as
+                        <strong>Assistant
+                            Professor, Department of Dermatology, Venereology & Leprosy at Dr. S.N. Medical College
+                            &
+                            MDM Hospital, Jodhpur</strong>.
                     </p>
-                    <p class="text-slate-600 text-base leading-relaxed">
-                        Whether dealing with chronic skin conditions, hair thinning, or seeking aesthetic enhancements
-                        like Laser Hair Removal and Hair Transplant, Dr. Anand ensures zero unnecessary prescriptions
-                        and focuses on long-term results.
+                </div>
+
+                <div class="about-bio-card reveal-right">
+                    <div class="bio-icon-header"><i class="fa-solid fa-microscope"></i></div>
+                    <h3>Areas of Key Clinical Interest</h3>
+                    <p class="bio-text">
+                        Specializes in advanced <strong>Vitiligo Surgery</strong>, <strong>Hair Transplant
+                            (Micro-FUE)</strong>, and <strong>Botox & Dermal Fillers</strong>. Certified through
+                        specialized fellowships with evidence-based treatment ethics.
                     </p>
-
-                    <!-- Key Doctor Highlights -->
-                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
-                        <div class="flex items-start gap-3">
-                            <div
-                                class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm shrink-0">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-sm">Clear Treatment Plan</h4>
-                                <p class="text-xs text-slate-500">Explains the root cause in simple language before
-                                    starting care.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div
-                                class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm shrink-0">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-sm">Advanced Technology</h4>
-                                <p class="text-xs text-slate-500">State-of-the-art Lasers, GFC Therapy & Painless
-                                    Procedures.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div
-                                class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm shrink-0">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-sm">Ethical Practice</h4>
-                                <p class="text-xs text-slate-500">No unnecessary tests or expensive unneeded
-                                    medications.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div
-                                class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm shrink-0">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-sm">Personalized Follow-up</h4>
-                                <p class="text-xs text-slate-500">Dedicated care throughout your recovery journey.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-2">
-                        <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20would%20like%20to%20consult%20you."
-                            class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm px-6 py-3 rounded-xl transition shadow">
-                            <span>Book Consultation With Dr. Anand</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Featured Treatment Poster Banner Section (banner.jpg Integration) -->
-    <section id="gfc-banner" class="py-12 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-                class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-3xl p-6 sm:p-10 border border-slate-700 shadow-2xl grid lg:grid-cols-12 gap-8 items-center">
+    <!-- FULL 8-POINT ACHIEVEMENTS SHOWCASE -->
+    <section class="section-padding bg-light" id="achievements">
+        <div class="container">
+            <div class="section-title-box text-center">
+                <span class="tag-label gold-tag">Honours & Recognition</span>
+                <h2><span class="tw-target" data-text="Doctor's Achievements"></span></h2>
+                <p>Complete List of Medals, Awards, Fellowships & Medical Memberships</p>
+            </div>
 
-                <!-- Left Details -->
-                <div class="lg:col-span-7 space-y-5">
-                    <span
-                        class="bg-teal-500/20 text-teal-300 text-xs font-bold px-3 py-1 rounded-full border border-teal-500/30">
-                        Featured Treatment Poster
-                    </span>
-                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
-                        GFC (Growth Factor Concentrate) <br><span class="text-brand-500">Hair Treatments</span>
-                    </h2>
-                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                        Reactivate. Restore. Regain. <br>
-                        Experience stronger roots, thicker hair, and renewed confidence with non-surgical GFC Hair Loss
-                        Therapy at Dr. Lamoria's Clinic.
-                    </p>
-
-                    <div class="grid sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-200">
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-500"></i>
-                            Stimulates natural hair growth</div>
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-500"></i>
-                            Improves hair density & thickness</div>
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-500"></i>
-                            Strengthens weak & thinning hair</div>
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-500"></i>
-                            100% Safe, Effective & Non-surgical</div>
-                    </div>
-
-                    <div class="pt-2">
-                        <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20am%20interested%20in%20GFC%20Hair%20Treatment."
-                            target="_blank"
-                            class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-6 py-3 rounded-xl transition shadow-lg">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Inquire About GFC Therapy</span>
-                        </a>
+            <div class="achievements-grid-full">
+                <!-- 1 -->
+                <div class="achievement-card gold-border reveal-left">
+                    <div class="badge-icon gold-badge"><i class="fa-solid fa-trophy"></i></div>
+                    <div class="achievement-info">
+                        <span class="year-span">2018 • International Award</span>
+                        <h4>Gold Medal Aesthetic Asia</h4>
+                        <p>Awarded 1st Position at the prestigious international conference in Aesthetic
+                            Dermatology.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Right Banner Poster Display (banner.jpg) -->
-                <div class="lg:col-span-5 flex justify-center">
-                    <div
-                        class="relative max-w-sm rounded-2xl overflow-hidden border-2 border-brand-500/40 shadow-2xl group">
-                        <img src="banner.jpeg" alt="Dr. Lamoria's GFC Hair Treatment Banner"
-                            class="w-full h-auto object-cover group-hover:scale-105 transition duration-500"
-                            onerror="this.onerror=null; this.src='doctor_photo.jpg';">
-                        <div
-                            class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-center">
-                            <p class="text-xs text-slate-200 font-semibold"></p>
-                        </div>
+                <!-- 2 -->
+                <div class="achievement-card reveal-right">
+                    <div class="badge-icon teal-badge"><i class="fa-solid fa-award"></i></div>
+                    <div class="achievement-info">
+                        <span class="year-span">2021 • Surgical National Award</span>
+                        <h4>Best Paper Award (ACSI)</h4>
+                        <p>Recognized for outstanding clinical paper at Association of Cutaneous Surgeons of India.
+                        </p>
                     </div>
                 </div>
 
+                <!-- 3 -->
+                <div class="achievement-card reveal-left">
+                    <div class="badge-icon teal-badge"><i class="fa-solid fa-medal"></i></div>
+                    <div class="achievement-info">
+                        <span class="year-span">2018 • State Dermatology Conference</span>
+                        <h4>Bronze Medal CUTICON RAJ</h4>
+                        <p>Award Paper Winner at the CUTICON Rajasthan State Dermatology Conference.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="achievement-card reveal-right">
+                    <div class="badge-icon teal-badge"><i class="fa-solid fa-brain"></i></div>
+                    <div class="achievement-info">
+                        <span class="year-span">2018 • Clinical Excellence</span>
+                        <h4>Bronze Medal in Quiz (CODFICON)</h4>
+                        <p>Secured Bronze medal in clinical dermatology quiz competition at CODFICON.</p>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="achievement-card reveal-left">
+                    <div class="badge-icon teal-badge"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="achievement-info">
+                        <span class="year-span">Super-Specialization</span>
+                        <h4>Fellowship in Hair Transplant</h4>
+                        <p>Certified advanced micro-FUE surgical hair restoration & follicle transplant specialist.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="achievement-card reveal-right">
+                    <div class="badge-icon teal-badge"><i class="fa-solid fa-users-gear"></i></div>
+                    <div class="achievement-info">
+                        <span class="year-span">Surgical Leadership</span>
+                        <h4>Organizing Committee Member</h4>
+                        <p>Member of organizing committees for multiple state & national Dermatosurgery Workshops.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="achievement-card reveal-left">
+                    <div class="badge-icon teal-badge"><i class="fa-solid fa-id-card"></i></div>
+                    <div class="achievement-info">
+                        <span class="year-span">Professional Membership</span>
+                        <h4>Life Member of IADVL</h4>
+                        <p>Life Member of Indian Association of Dermatologists, Venereologists and Leprologists.</p>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="achievement-card reveal-right">
+                    <div class="badge-icon teal-badge"><i class="fa-solid fa-user-check"></i></div>
+                    <div class="achievement-info">
+                        <span class="year-span">Surgical Association</span>
+                        <h4>Member of ACSI</h4>
+                        <p>Active Member of the Association of Cutaneous Surgeons of India.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Comprehensive Treatments Section -->
-    <section id="treatments" class="py-16 sm:py-24 bg-slate-100/70">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <div
-                    class="inline-block text-xs font-extrabold uppercase tracking-widest text-brand-700 bg-brand-100 px-3 py-1 rounded-md">
-                    Our Specialized Clinical Care
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
-                    Advanced Treatments for <span class="gradient-text">Skin & Hair</span>
-                </h2>
-                <p class="text-slate-600 text-base">
-                    From permanent hair transplant solutions to advanced acne scar surgeries, we provide scientific and
-                    clinically backed solutions.
-                </p>
+    <!-- CATEGORY 1: Cosmetics & Aesthetic Care (Frameless Cards) -->
+    <section class="section-padding bg-white" id="cosmetics">
+        <div class="container">
+            <div class="section-title-box text-center">
+                <span class="tag-label"> Non-Surgical Aesthetics</span>
+                <h2><span class="tw-target" data-text="Cosmetics & Aesthetic Care"></span></h2>
+                <p>Medical-grade non-surgical skin rejuvenation and laser aesthetics</p>
             </div>
 
-            <!-- Service Cards Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Treatment Card 1 -->
-                <div
-                    class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition group flex flex-col justify-between">
-                    <div>
-                        <div
-                            class="w-12 h-12 rounded-xl bg-teal-50 text-brand-700 flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-scissors"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Hair Transplant Surgery</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Permanent, natural-looking hair restoration using advanced FUE technique. Micro-grafting for
-                            high density, hairline redesigning & dense crown restoration.
-                        </p>
-                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Natural hairline design</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Painless procedure under local
-                                anesthesia</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Lifetime permanent results
-                            </li>
-                        </ul>
+            <div class="frameless-grid">
+                <!-- Card 1 -->
+                <div class="frameless-card reveal-left">
+                    <div class="frameless-thumb">
+                        <img src="https://royalmedicalspa.us/wp-content/uploads/2025/03/steptodown.com323948.jpg"
+                            alt="Hydrafacial">
+                        <span class="card-badge">Top Rated</span>
                     </div>
-                    <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20am%20interested%20in%20Hair%20Transplant%20Consultation."
-                        class="w-full text-center bg-slate-900 hover:bg-brand-700 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-sm"></i> Book Hair Transplant Consultation
-                    </a>
+                    <div class="frameless-content">
+                        <h3>Medical Hydrafacial</h3>
+                        <p>Deep pore vacuum extraction, antioxidant serum infusion & instant glass-skin glow.</p>
+                        <button onclick="openBookingModal('Medical Hydrafacial')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Treatment Card 2 -->
-                <div
-                    class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition group flex flex-col justify-between">
-                    <div>
-                        <div
-                            class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-vial-virus"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">GFC & PRP Hair Therapy</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Growth Factor Concentrate (GFC) & PRP therapy to stop hair fall, strengthen weak hair
-                            follicles, and stimulate natural regrowth without surgery.
-                        </p>
-                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> High concentration growth
-                                factors</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Reduces hair thinning &
-                                shedding</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> 100% safe & autologous
-                                treatment</li>
-                        </ul>
+                <!-- Card 2 -->
+                <div class="frameless-card reveal-up">
+                    <div class="frameless-thumb">
+                        <img src="https://laserskinspecialist.com/wp-content/uploads/2021/12/chemical-peels-kasia-fernandez-laser-skin-specialist.jpeg"
+                            alt="Chemical Peels">
                     </div>
-                    <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20want%20information%20regarding%20GFC/PRP%20Hair%20Therapy."
-                        class="w-full text-center bg-slate-900 hover:bg-brand-700 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-sm"></i> Inquire About GFC / PRP
-                    </a>
+                    <div class="frameless-content">
+                        <h3>Chemical, Fruit & Party Peels</h3>
+                        <p>Custom glycolic, salicylic, fruit & party peels for tan removal, melasma & acne
+                            reduction.
+                        </p>
+                        <button onclick="openBookingModal('Chemical, Fruit & Party Peels')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Treatment Card 3 -->
-                <div
-                    class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition group flex flex-col justify-between">
-                    <div>
-                        <div
-                            class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Acne & Acne Scar Reduction</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Target active acne, deep ice-pick scars, boxcar scars, and pigmentation using Subcision,
-                            Microneedling RF, and tailored Chemical Peels.
-                        </p>
-                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Smooths out deep pitted scars
-                            </li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Controls active pimples & oil
-                                production</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Restores smooth skin texture
-                            </li>
-                        </ul>
+                <!-- Card 3 -->
+                <div class="frameless-card reveal-up">
+                    <div class="frameless-thumb">
+                        <img src="https://ipradskinclinic.com/wp-content/uploads/2025/09/Untitled-design-17.png"
+                            alt="Laser Hair Removal">
                     </div>
-                    <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20want%20to%20consult%20for%20Acne%20and%20Scar%20Treatment."
-                        class="w-full text-center bg-slate-900 hover:bg-brand-700 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-sm"></i> Book Acne/Scar Consultation
-                    </a>
+                    <div class="frameless-content">
+                        <h3>Laser Hair Removal (Latest Advanced)</h3>
+                        <p>Painless triple-wavelength laser treatment for permanent facial & body hair reduction.
+                        </p>
+                        <button onclick="openBookingModal('Laser Hair Removal')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Treatment Card 4 -->
-                <div
-                    class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition group flex flex-col justify-between">
-                    <div>
-                        <div
-                            class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-sun"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Laser Toning & Carbon Facial</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Advanced US-FDA approved laser technology for hyperpigmentation, melasma, sun spots, tan
-                            removal, and instant skin glow (Hollywood Carbon Laser).
-                        </p>
-                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Evens skin tone & lightens
-                                dark spots</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Zero downtime party glow</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Reduces enlarged pores</li>
-                        </ul>
+                <!-- Card 4 -->
+                <div class="frameless-card reveal-right">
+                    <div class="frameless-thumb">
+                        <img src="https://avenidamedical.com/wp-content/uploads/2025/11/botox-main.jpg"
+                            alt="Meso Botox & Fillers">
                     </div>
-                    <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20am%20interested%20in%20Laser%20Toning/Carbon%20Facial."
-                        class="w-full text-center bg-slate-900 hover:bg-brand-700 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-sm"></i> Book Laser Session
-                    </a>
+                    <div class="frameless-content">
+                        <h3>Meso Botox & Dermal Fillers</h3>
+                        <p>Precision anti-aging injections for wrinkle removal, fine lines & facial volume
+                            restoration.
+                        </p>
+                        <button onclick="openBookingModal('Meso Botox & Fillers')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Treatment Card 5 -->
-                <div
-                    class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition group flex flex-col justify-between">
-                    <div>
-                        <div
-                            class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-droplet"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Medical HydraFacial & Glow Drips</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Multi-step clinical facial to cleanse, exfoliate, extract impurities, and infuse deep
-                            hydrating antioxidants for youthful, glowing skin.
-                        </p>
-                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Deep pore cleansing &
-                                blackhead extraction</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Instant skin hydration</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> IV Glow Drip infusions
-                                available</li>
-                        </ul>
+                <!-- Card 5 -->
+                <div class="frameless-card reveal-left">
+                    <div class="frameless-thumb">
+                        <img src="https://gentletouchlasers.com/wp-content/uploads/2023/04/20230407203726_fpdl.in_carbon-peeling-face-young-beautiful-woman-peeling-skin-renewal-laser-point-face_170532-4476.jpg"
+                            alt="Laser Peels">
                     </div>
-                    <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20want%20to%20book%20a%20HydraFacial/Glow%20Session."
-                        class="w-full text-center bg-slate-900 hover:bg-brand-700 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-sm"></i> Book HydraFacial
-                    </a>
+                    <div class="frameless-content">
+                        <h3>Laser Peels & Carbon Peel</h3>
+                        <p>Q-switched Hollywood carbon laser for open pore tightening, oil control & pigmentation.
+                        </p>
+                        <button onclick="openBookingModal('Laser Peels & Carbon Peel')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Treatment Card 6 -->
-                <div
-                    class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition group flex flex-col justify-between">
-                    <div>
-                        <div
-                            class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-notes-medical"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Clinical Dermatology & PCOS</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Expert diagnosis and root-cause medical treatment for Psoriasis, Eczema, Fungal Infections,
-                            Vitiligo, and hormonal PCOS skin & hair issues.
-                        </p>
-                        <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Comprehensive skin evaluation
-                            </li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Targeted prescription
-                                management</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Relief from chronic itch &
-                                redness</li>
-                        </ul>
+                <!-- Card 6 -->
+                <div class="frameless-card reveal-up">
+                    <div class="frameless-thumb">
+                        <img src="https://www.drsalon.com.au/wp-content/uploads/2023/10/microdermabrasion.webp"
+                            alt="Micro Dermabrasion">
                     </div>
-                    <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20need%20a%20General%20Skin%20Consultation."
-                        class="w-full text-center bg-slate-900 hover:bg-brand-700 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-sm"></i> Consult Dr. Anand
-                    </a>
+                    <div class="frameless-content">
+                        <h3>Micro Dermabrasion</h3>
+                        <p>Diamond-tip mechanical skin exfoliation for polishing dull skin and removing dead tissue.
+                        </p>
+                        <button onclick="openBookingModal('Micro Dermabrasion')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
 
+                <!-- Card 7 -->
+                <div class="frameless-card reveal-up">
+                    <div class="frameless-thumb">
+                        <img src="https://cutis.com.au/wp-content/uploads/2023/04/ota-birthmark-removal-before-after.jpg"
+                            alt="Tattoo & Birth Mark Laser">
+                    </div>
+                    <div class="frameless-content">
+                        <h3>Tattoo & Birth Mark Removal</h3>
+                        <p>High-power Nd:YAG laser sessions to shatter tattoo ink pigments and congenital birth
+                            marks.
+                        </p>
+                        <button onclick="openBookingModal('Tattoo & Birth Mark Removal')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="frameless-card reveal-right">
+                    <div class="frameless-thumb">
+                        <img src="https://premier-clinic.com/wp-content/uploads/2021/06/Premier-Scar-Removal-MICRONEEDLING.jpg"
+                            alt="Dermaroller & Dermapen">
+                    </div>
+                    <div class="frameless-content">
+                        <h3>Dermaroller & Dermapen Microneedling</h3>
+                        <p>Collagen induction therapy for active acne scar smoothing and open pore refinement.</p>
+                        <button onclick="openBookingModal('Dermaroller & Dermapen')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Patient Reviews Section (Real Google Reviews) -->
-    <section id="reviews" class="py-16 sm:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <div
-                    class="inline-block text-xs font-extrabold uppercase tracking-widest text-brand-700 bg-brand-100 px-3 py-1 rounded-md">
-                    Verified Google Feedback
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
-                    What Our Patients <span class="gradient-text">Say About Us</span>
-                </h2>
-                <p class="text-slate-600 text-base">
-                    Rated <strong>4.6 Stars out of 5</strong> across 177+ verified Google Business Reviews.
-                </p>
+    <!-- CATEGORY 2: Clinical Dermatosurgery (Frameless Cards) -->
+    <section class="section-padding bg-light" id="dermatosurgery">
+        <div class="container">
+            <div class="section-title-box text-center">
+                <span class="tag-label">Precision Dermatosurgery</span>
+                <h2><span class="tw-target" data-text="Clinical Dermatosurgery"></span></h2>
+                <p>Surgical precision & minor procedures under local anesthesia</p>
             </div>
 
-            <!-- Review Cards Grid -->
-            <div class="grid md:grid-cols-3 gap-6">
-
-                <!-- Review 1 -->
-                <div
-                    class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
-                            ★ ★ ★ ★ ★
-                        </div>
-                        <p class="text-slate-700 text-sm italic mb-4">
-                            "I had a very good experience with Dr. Anand Lamoria sir. Sir listened carefully to my
-                            concerns & explained the treatment in a clear & simple way. Dr. is very knowledgeable."
-                        </p>
+            <div class="frameless-grid">
+                <!-- Card 1 -->
+                <div class="frameless-card reveal-left">
+                    <div class="frameless-thumb">
+                        <img src="https://www.medskinessentials.com/wp-content/uploads/2023/06/mse-headers-Subcision1.jpg"
+                            alt="Subcision & Scar Revision">
                     </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
-                        <div
-                            class="w-9 h-9 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
-                            D
-                        </div>
-                        <div>
-                            <p class="font-bold text-slate-900 text-sm">Deepika Soni</p>
-                            <p class="text-xs text-slate-400">Google Verified Review</p>
-                        </div>
+                    <div class="frameless-content">
+                        <h3>Subcision & Scar Revision</h3>
+                        <p>Surgically releasing deep tethered acne scars combined with scar revision protocols.</p>
+                        <button onclick="openBookingModal('Subcision & Scar Revision')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
 
-                <!-- Review 2 -->
-                <div
-                    class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
-                            ★ ★ ★ ★ ★
-                        </div>
-                        <p class="text-slate-700 text-sm italic mb-4">
-                            "Dr. Anand Lamoria is undoubtedly the best dermatologist in Jodhpur! His approach to
-                            skincare is extremely professional, thorough, and compassionate. He takes time to understand
-                            the root cause."
-                        </p>
+                <!-- Card 2 -->
+                <div class="frameless-card reveal-up">
+                    <div class="frameless-thumb">
+                        <img src="https://skyskinclinic.in/wp-content/uploads/2025/06/Advanced-Radio-Frequency-Cautery-Treatment-in-Chennai-banner-Image.webp"
+                            alt="Radio Frequency Cautery">
                     </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
-                        <div
-                            class="w-9 h-9 rounded-full bg-sky-100 text-sky-700 font-bold flex items-center justify-center text-sm">
-                            R
-                        </div>
-                        <div>
-                            <p class="font-bold text-slate-900 text-sm">Rakesh Panwar</p>
-                            <p class="text-xs text-slate-400">Google Verified Review</p>
-                        </div>
+                    <div class="frameless-content">
+                        <h3>Radio Frequency Cautery</h3>
+                        <p>Instant scarless removal of facial moles, warts, skin tags, DPNs and seborrheic
+                            keratosis.
+                        </p>
+                        <button onclick="openBookingModal('Radio Frequency Cautery')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
 
-                <!-- Review 3 -->
-                <div
-                    class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
-                            ★ ★ ★ ★ ★
-                        </div>
-                        <p class="text-slate-700 text-sm italic mb-4">
-                            "मैंने डॉ. आनन्द जी लामोरिया से स्किन की समस्या के लिए इलाज करवाया और मुझे बहुत अच्छा अनुभव
-                            हुआ। डॉक्टर साहब बहुत ही योग्य और अनुभवी हैं और बहुत जल्दी राहत मिली।"
-                        </p>
+                <!-- Card 3 -->
+                <div class="frameless-card reveal-up">
+                    <div class="frameless-thumb">
+                        <img src="https://drkarishnichittarvu.com/wp-content/uploads/2026/03/vitiligo-surgery.png"
+                            alt="Vitiligo Treatment & Surgery">
                     </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
-                        <div
-                            class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-sm">
-                            H
-                        </div>
-                        <div>
-                            <p class="font-bold text-slate-900 text-sm">Hanuman Sai</p>
-                            <p class="text-xs text-slate-400">Google Verified Review</p>
-                        </div>
+                    <div class="frameless-content">
+                        <h3>Vitiligo Treatment & Surgery</h3>
+                        <p>Advanced melanocyte cell grafting and punch grafting surgeries for stable white patches.
+                        </p>
+                        <button onclick="openBookingModal('Vitiligo Surgery')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
 
+                <!-- Card 4 -->
+                <div class="frameless-card reveal-right">
+                    <div class="frameless-thumb">
+                        <img src="https://www.footcareclinic.ie/wp-content/uploads/2024/06/podologist-procedure-ingrown-nail-removal-with-nippers.webp"
+                            alt="Nail Surgeries">
+                    </div>
+                    <div class="frameless-content">
+                        <h3>Nail Surgeries & Ingrown Nail</h3>
+                        <p>Permanent surgical correction for painful ingrown toenails and diseased nail matrix
+                            excision.
+                        </p>
+                        <button onclick="openBookingModal('Nail Surgeries')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="frameless-card reveal-left">
+                    <div class="frameless-thumb">
+                        <img src="https://geimshospital.com/wp-content/uploads/2025/09/What-is-Skin-Biopsy-img-1024x512.jpg"
+                            alt="Skin Biopsy">
+                    </div>
+                    <div class="frameless-content">
+                        <h3>Diagnostic Skin Biopsy</h3>
+                        <p>Punch & excision biopsies for accurate histopathological diagnosis of complex skin
+                            disorders.
+                        </p>
+                        <button onclick="openBookingModal('Skin Biopsy')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="frameless-card reveal-up">
+                    <div class="frameless-thumb">
+                        <img src="https://eternisclinic.com/assets/img/treatments/intralesional-therapy-hero.jpg"
+                            alt="Intralesional Therapy">
+                    </div>
+                    <div class="frameless-content">
+                        <h3>Intralesional Therapy</h3>
+                        <p>Direct micro-injections for keloids, hypertrophic scars, and stubborn patchy alopecia
+                            areata.
+                        </p>
+                        <button onclick="openBookingModal('Intralesional Therapy')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="frameless-card reveal-right">
+                    <div class="frameless-thumb">
+                        <img src="https://www.noblehospital.co/images/services/earlobe.png"
+                            alt="Sutureless Earlobe Repair">
+                    </div>
+                    <div class="frameless-content">
+                        <h3>Sutureless Earlobe Repair</h3>
+                        <p>Painless, zero-stitch repair for torn or widened earlobe piercings using surgical tissue
+                            adhesive.</p>
+                        <button onclick="openBookingModal('Sutureless Earlobe Repair')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY 3: Hair Transplant & Hair Care (Frameless Cards) -->
+    <section class="section-padding bg-white" id="hair-transplant">
+        <div class="container">
+            <div class="section-title-box text-center">
+                <span class="tag-label">Micro-FUE & Hair Restoration</span>
+                <h2><span class="tw-target" data-text="Hair Transplant & Hair Care"></span></h2>
+                <p>Evidence-based surgical & non-surgical hair restoration</p>
             </div>
 
-            <!-- Google Map Rating Action Banner -->
-            <div
-                class="mt-12 text-center bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div class="flex items-center gap-3 text-left">
-                    <!-- Pure Inline Google SVG (Zero External Dependency) -->
-                    <svg class="w-8 h-8 shrink-0" viewBox="0 0 24 24">
-                        <path fill="#4285F4"
-                            d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-                        <path fill="#34A853"
-                            d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-                        <path fill="#FBBC05"
-                            d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
-                        <path fill="#EA4335"
-                            d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
-                    </svg>
-                    <div>
-                        <p class="font-bold text-slate-900 text-sm">4.6 / 5.0 Rating on Google Maps</p>
-                        <p class="text-xs text-slate-500">Based on 177+ real patient experiences in Jodhpur</p>
+            <div class="frameless-grid">
+                <!-- Card 1 -->
+                <div class="frameless-card reveal-left">
+                    <div class="frameless-thumb">
+                        <img src="https://www.amayaclinics.com/wp-content/uploads/2024/10/Hair-transplant-2.jpg"
+                            alt="FUE Hair Transplant">
+                        <span class="card-badge">Advanced FUE</span>
+                    </div>
+                    <div class="frameless-content">
+                        <h3>Hair Transplant (Advanced FUE)</h3>
+                        <p>Painless micro-FUE follicle extraction with high graft survival rate & natural hairline
+                            design.</p>
+                        <button onclick="openBookingModal('FUE Hair Transplant')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
-                <a href="https://maps.google.com/?q=Dr.+Anand+Lamoria+Best+Dermatologist+in+Jodhpur" target="_blank"
-                    class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition">
-                    View Google Maps Profile
+
+                <!-- Card 2 -->
+                <div class="frameless-card reveal-up">
+                    <div class="frameless-thumb">
+                        <img src="https://www.drbatul.com/wp-content/uploads/2024/02/GFC-growth-factor-concentrate-mumbai-1024x512.png"
+                            alt="Growth Factor Therapy">
+                    </div>
+                    <div class="frameless-content">
+                        <h3>Growth Factor Therapy (GFC)</h3>
+                        <p>Autologous concentrated growth factors to stop active hair shedding and boost hair
+                            follicle
+                            thickness.</p>
+                        <button onclick="openBookingModal('Growth Factor Therapy (GFC)')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="frameless-card reveal-up">
+                    <div class="frameless-thumb">
+                        <img src="https://www.dcpskincare.com/Content/files/SecondaryImages/PlasmaInjections1.jpg"
+                            alt="PRP Therapy">
+                    </div>
+                    <div class="frameless-content">
+                        <h3>PRP Therapy for Hair Growth</h3>
+                        <p>Platelet-Rich Plasma scalp therapy for awakening dormant hair roots & natural hair
+                            regrowth.
+                        </p>
+                        <button onclick="openBookingModal('PRP Therapy')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="frameless-card reveal-right">
+                    <div class="frameless-thumb">
+                        <img src="https://cdn.shopify.com/s/files/1/0871/7713/4375/files/Mesotherapy_Gun_for_Hair_3.jpg"
+                            alt="Hair Mesotherapy">
+                    </div>
+                    <div class="frameless-content">
+                        <h3>Hair Mesotherapy</h3>
+                        <p>Micro-injections of essential hair vitamins, peptides & amino acids directly into scalp
+                            hair
+                            roots.</p>
+                        <button onclick="openBookingModal('Hair Mesotherapy')" class="btn-card-book">
+                            Book Session <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section class="section-padding bg-light" id="reviews">
+        <div class="container">
+            <div class="section-title-box text-center">
+                <span class="tag-label">Patient Feedback</span>
+                <h2><span class="tw-target" data-text="Google Patient Reviews"></span></h2>
+                <p>Read real stories from patients treated at Shastri Nagar Clinic</p>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review 1: Aarushi Ojha -->
+                <div class="review-card reveal-up">
+                    <div class="reviewer">
+                        <div class="rev-avatar">A</div>
+                        <div>
+                            <h4>Aarushi Ojha</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Cleared all acne from my face. Effective and best treatment ever till date."</p>
+                </div>
+
+                <!-- Review 2: Dev Kulhar -->
+                <div class="review-card reveal-up">
+                    <div class="reviewer">
+                        <div class="rev-avatar">D</div>
+                        <div>
+                            <h4>Dev Kulhar</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Dr. Anand Lamoria is truly one of the best dermatologists in Jodhpur. Knowledgeable,
+                        professional, polite behaviour and caring — my skin problem has improved significantly under
+                        their care. Highly recommend!"</p>
+                </div>
+
+                <!-- Review 3: Gaurav Choudhary -->
+                <div class="review-card reveal-up">
+                    <div class="reviewer">
+                        <div class="rev-avatar">G</div>
+                        <div>
+                            <h4>Gaurav Choudhary</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"I visited Dr. Anand for my skin problem which I was facing since 5 years. I consulted Dr.
+                        Anand
+                        and after taking initial treatment I got huge relief and now my skin problem is totally
+                        cured.
+                        Nature of Dr. Anand is very humble."</p>
+                </div>
+
+                <!-- Review 4: Vinay Singh -->
+                <div class="review-card reveal-up">
+                    <div class="reviewer">
+                        <div class="rev-avatar">V</div>
+                        <div>
+                            <h4>Vinay Singh</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"आप एक महान डॉक्टर हैं - अपने स्पर्श से लोगों को ठीक कर देते हैं! आप एक अद्भुत व्यक्ति हैं और
+                        साथ
+                        ही आप हमारे दिलों में खुशी और गर्मजोशी लाते हैं। क्योंकि मेरी त्वचा को आपने चमकाने का काम
+                        किया
+                        सर। धन्यवाद।"</p>
+                </div>
+
+                <!-- Review 5: Savai Sain -->
+                <div class="review-card reveal-up">
+                    <div class="reviewer">
+                        <div class="rev-avatar">S</div>
+                        <div>
+                            <h4>Savai Sain</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Best dermatologist in Jodhpur. I am fully satisfied with his treatment and behaviour. I was
+                        suffering from pimple after his treatment no any pimple and side effects on my face thanks
+                        @dr.@anand lamoriya ji."</p>
+                </div>
+
+                <!-- Review 6: Deepika Soni -->
+                <div class="review-card reveal-up">
+                    <div class="reviewer">
+                        <div class="rev-avatar">D</div>
+                        <div>
+                            <h4>Deepika Soni</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"I had a very good experience with Dr. Anand Lamoria sir. Sir listened carefully to my
+                        concerns &
+                        explained the treatment in a clear & simple way. Dr is very knowledgeable."</p>
+                </div>
+
+                <!-- Review 7: Rakesh Panwar -->
+                <div class="review-card reveal-up">
+                    <div class="reviewer">
+                        <div class="rev-avatar">R</div>
+                        <div>
+                            <h4>Rakesh Panwar</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Dr. Anand Lamoria is undoubtedly the best dermatologist in Jodhpur, Rajasthan! His approach
+                        to
+                        skincare is extremely professional, thorough, and compassionate."</p>
+                </div>
+
+                <!-- Review 8: Hanuman Sai -->
+                <div class="review-card reveal-up">
+                    <div class="reviewer">
+                        <div class="rev-avatar">H</div>
+                        <div>
+                            <h4>Hanuman Sai</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"मैंने डॉ. आनन्द जी लामोरिया से स्किन की समस्या के लिए इलाज करवाया और मुझे बहुत अच्छा अनुभव
+                        हुआ।
+                        डॉक्टर साहब बहुत ही योग्य और अनुभवी हैं।"</p>
+                </div>
+            </div>
+
+            <!-- Direct Link to Google Reviews Page -->
+            <div class="text-center mt-4 reveal-up">
+                <a href="https://www.google.co.in/maps/place/Dr.+Anand+Lamoria+%7C+Best+Dermatologist+in+Jodhpur+%7C/@26.2693355,73.0039834,15z/data=!4m8!3m7!1s0x39418db8bbcf21cb:0xf34418bc3b7d3a8a!8m2!3d26.2683665!4d73.0070948!9m1!1b1!16s%2Fg%2F11kzz09k1r?entry=ttu"
+                    target="_blank" rel="noopener noreferrer" class="btn-main-secondary btn-google-reviews">
+                    <i class="fa-brands fa-google"></i> Read All 177+ Google Reviews
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Accordion Section -->
-    <section id="faqs" class="py-16 sm:py-24 bg-slate-100/70">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 space-y-3">
-                <div
-                    class="inline-block text-xs font-extrabold uppercase tracking-widest text-brand-700 bg-brand-50 px-3 py-1 rounded-md">
-                    Got Questions?
-                </div>
-                <h2 class="text-3xl font-extrabold text-slate-900">
-                    Frequently Asked <span class="gradient-text">Questions</span>
-                </h2>
-                <p class="text-slate-600 text-sm">Everything you need to know before visiting Dr. Lamoria's Clinic.</p>
+    <section class="section-padding bg-white" id="insta-feed">
+        <div class="container">
+            <div class="section-title-box text-center">
+                <span class="tag-label gold-tag"><i class="fa-brands fa-instagram"></i> Social Media</span>
+                <h2><span class="tw-target" data-text="Instagram Feed & Clinical Cases"></span></h2>
+                <p>Follow @drlamoria_skincare for live surgery reels and skincare tips</p>
             </div>
 
-            <div class="space-y-4">
+            <div class="insta-grid">
+                <a href="https://www.instagram.com/p/Db74T-pPiOR/" target="_blank" class="insta-card reveal-left">
+                    <img src="https://i.postimg.cc/jq6SFgxD/1.jpg" alt="Instagram Post">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i> View Post</div>
+                </a>
+                <a href="https://www.instagram.com/p/DbhfIrBPWvz/" target="_blank" class="insta-card reveal-up">
+                    <img src="https://i.postimg.cc/nzkNvDxL/Screenshot-13-8-2026-205257-www-instagram-com.jpg"
+                        alt="Instagram Post">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i> View Post</div>
+                </a>
+                <a href="https://www.instagram.com/p/DahuTuxvPMm/" target="_blank" class="insta-card reveal-up">
+                    <img src="https://i.postimg.cc/SRPTrLvN/Screenshot-13-8-2026-205432-www-instagram-com.jpg"
+                        alt="Instagram Post">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i> View Post</div>
+                </a>
+                <a href="https://www.instagram.com/p/DPWQeyeDMD5/" target="_blank" class="insta-card reveal-right">
+                    <img src="https://i.postimg.cc/MTFm26bc/Screenshot-13-8-2026-205614-www-instagram-com.jpg"
+                        alt="Instagram Post">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i> View Post</div>
+                </a>
+                <a href="https://www.instagram.com/p/DO-rSY5gqpj/" target="_blank" class="insta-card reveal-right">
+                    <img src="https://i.postimg.cc/ZKV5xwZK/Screenshot-13-8-2026-22251-www-instagram-com.jpg"
+                        alt="Instagram Post">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i> View Post</div>
+                </a>
+                <a href="https://www.instagram.com/p/DOs34plApnD/" target="_blank" class="insta-card reveal-right">
+                    <img src="https://i.postimg.cc/RZ1hnvhh/Screenshot-13-8-2026-224942-www-instagram-com.jpg"
+                        alt="Instagram Post">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i> View Post</div>
+                </a>
+                <a href="https://www.instagram.com/p/DOigdEqglX8/" target="_blank" class="insta-card reveal-right">
+                    <img src="https://i.postimg.cc/g0RC002X/Screenshot-13-8-2026-22547-www-instagram-com.jpg"
+                        alt="Instagram Post">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i> View Post</div>
+                </a>
+                <a href="https://www.instagram.com/p/DN7plqQgoqM/" target="_blank" class="insta-card reveal-right">
+                    <img src="https://i.postimg.cc/Vv54d7Fc/Screenshot-13-8-2026-225544-www-instagram-com.jpg"
+                        alt="Instagram Post">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i> View Post</div>
+                </a>
+            </div>
 
-                <!-- FAQ Item 1 -->
-                <div class="border border-slate-200 rounded-2xl p-5 hover:border-brand-500 transition bg-white">
-                    <h3 class="font-bold text-slate-900 text-base flex items-center justify-between cursor-pointer"
-                        onclick="toggleFaq(1)">
-                        <span>How can I book an appointment with Dr. Anand Lamoria?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-700 text-sm" id="faq-icon-1"></i>
-                    </h3>
-                    <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed hidden" id="faq-ans-1">
-                        You can easily book an appointment by clicking the WhatsApp booking buttons on this page or by
-                        calling our clinic directly at <strong>+91 89553 28904</strong>.
-                    </p>
-                </div>
-
-                <!-- FAQ Item 2 -->
-                <div class="border border-slate-200 rounded-2xl p-5 hover:border-brand-500 transition bg-white">
-                    <h3 class="font-bold text-slate-900 text-base flex items-center justify-between cursor-pointer"
-                        onclick="toggleFaq(2)">
-                        <span>What is GFC Hair Treatment and how does it work?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-700 text-sm" id="faq-icon-2"></i>
-                    </h3>
-                    <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed hidden" id="faq-ans-2">
-                        Growth Factor Concentrate (GFC) therapy is a highly concentrated, non-surgical treatment derived
-                        from your own blood. It releases essential growth factors directly into hair roots to stop hair
-                        fall and trigger natural hair regrowth.
-                    </p>
-                </div>
-
-                <!-- FAQ Item 3 -->
-                <div class="border border-slate-200 rounded-2xl p-5 hover:border-brand-500 transition bg-white">
-                    <h3 class="font-bold text-slate-900 text-base flex items-center justify-between cursor-pointer"
-                        onclick="toggleFaq(3)">
-                        <span>How many sessions are required for Acne Scar treatment?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-700 text-sm" id="faq-icon-3"></i>
-                    </h3>
-                    <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed hidden" id="faq-ans-3">
-                        The number of sessions depends on scar depth and type. Typically, 3 to 5 sessions combining
-                        Microneedling RF, Subcision, and Chemical Peels yield significant, permanent smoothing.
-                    </p>
-                </div>
-
-                <!-- FAQ Item 4 -->
-                <div class="border border-slate-200 rounded-2xl p-5 hover:border-brand-500 transition bg-white">
-                    <h3 class="font-bold text-slate-900 text-base flex items-center justify-between cursor-pointer"
-                        onclick="toggleFaq(4)">
-                        <span>What are the OPD clinic timings in Shastri Nagar?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-700 text-sm" id="faq-icon-4"></i>
-                    </h3>
-                    <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed hidden" id="faq-ans-4">
-                        Our clinic is open Monday to Saturday from 10:00 AM to 7:30 PM. Sunday visits are arranged by
-                        prior appointment.
-                    </p>
-                </div>
-
+            <!-- Instagram Profile Redirection Button -->
+            <div class="text-center mt-4 reveal-up">
+                <a href="https://www.instagram.com/drlamoria_skincare/" target="_blank" rel="noopener noreferrer"
+                    class="btn-main-secondary btn-insta-follow">
+                    <i class="fa-brands fa-instagram"></i> Follow @drlamoria_skincare on Instagram
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Location & Contact Section -->
-    <section id="contact" class="py-16 sm:py-24 bg-brand-navy text-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
+    <section class="section-padding bg-light" id="location">
+        <div class="container location-flex">
+            <!-- Left Side: Address & Info -->
+            <div class="location-info reveal-left">
+                <span class="tag-label">Clinic Visit</span>
+                <h2><span class="tw-target" data-text="Address & Timings"></span></h2>
 
-                <!-- Contact Details -->
-                <div class="lg:col-span-6 space-y-6">
-                    <div
-                        class="inline-block text-xs font-extrabold uppercase tracking-widest text-brand-400 bg-brand-900/60 border border-brand-700 px-3 py-1 rounded-md">
-                        Visit Our Clinic
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
-                        Dr. Lamoria's Skin & Hair Clinic
-                    </h2>
-                    <p class="text-slate-300 text-sm leading-relaxed">
-                        Conveniently located in Sector-D, Shastri Nagar, Jodhpur. Feel free to visit or drop a WhatsApp
-                        message for consultations.
-                    </p>
-
-                    <div class="space-y-4 pt-2">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-10 h-10 rounded-xl bg-brand-800/80 text-brand-400 flex items-center justify-center font-bold shrink-0">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Clinic Address</h4>
-                                <p class="text-xs text-slate-300 leading-relaxed mt-0.5">
-                                    Government Quarters, 3/2, Near Ajeet Mal Bhandari Road, Sector-D, Shastri Nagar,
-                                    Jodhpur, Rajasthan 342003
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-10 h-10 rounded-xl bg-brand-800/80 text-brand-400 flex items-center justify-center font-bold shrink-0">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Phone Number</h4>
-                                <p class="text-xs text-slate-300 mt-0.5">
-                                    <a href="tel:+918955328904"
-                                        class="hover:text-brand-400 font-semibold text-white">+91 89553 28904</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-10 h-10 rounded-xl bg-brand-800/80 text-brand-400 flex items-center justify-center font-bold shrink-0">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Consultation Hours</h4>
-                                <p class="text-xs text-slate-300 mt-0.5">Monday – Saturday: 10:00 AM – 7:30 PM</p>
-                                <p class="text-xs text-slate-400">Sunday: By Appointment</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-4 flex items-center gap-4">
-                        <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20want%20to%20visit%20the%20Shastri%20Nagar%20clinic."
-                            target="_blank"
-                            class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-6 py-3 rounded-xl transition flex items-center gap-2 shadow-lg">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Chat on WhatsApp</span>
-                        </a>
-                        <a href="https://maps.google.com/?q=Government+quarters,+3/2,+near+Ajeet+Mal+Bhandari+Road,+Sector-D,+Shastri+Nagar,+Jodhpur,+Rajasthan+342003"
-                            target="_blank"
-                            class="bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm px-6 py-3 rounded-xl transition border border-slate-700">
-                            <i class="fa-solid fa-diamond-turn-right mr-1.5 text-brand-400"></i> Get Directions
-                        </a>
+                <div class="info-line">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <div>
+                        <strong>Address</strong>
+                        <p>Govt Quarters, 3/2, near Ajeet Mal Bhandari Road, Sector-D, Shastri Nagar, Jodhpur,
+                            Rajasthan
+                            342003</p>
                     </div>
                 </div>
 
-                <!-- Google Maps Card Preview -->
-                <div class="lg:col-span-6">
-                    <div class="bg-slate-800 p-4 rounded-3xl border border-slate-700 shadow-2xl">
-                        <div
-                            class="w-full h-80 rounded-2xl overflow-hidden relative bg-slate-900 flex items-center justify-center text-center p-6">
-                            <!-- Styled Map Representation Card -->
-                            <div class="space-y-4">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-brand-500/20 text-brand-400 mx-auto flex items-center justify-center text-3xl">
-                                    <i class="fa-solid fa-map-location-dot"></i>
-                                </div>
-                                <h3 class="text-lg font-bold text-white">Shastri Nagar Clinic Location</h3>
-                                <p class="text-xs text-slate-400 max-w-sm mx-auto">
-                                    Near Ajeet Mal Bhandari Road, Sector-D, Shastri Nagar, Jodhpur
-                                </p>
-                                <a href="https://maps.google.com/?q=Government+quarters,+3/2,+near+Ajeet+Mal+Bhandari+Road,+Sector-D,+Shastri+Nagar,+Jodhpur,+Rajasthan+342003"
-                                    target="_blank"
-                                    class="inline-block bg-brand-500 hover:bg-brand-600 text-white text-xs font-bold px-6 py-2.5 rounded-xl transition">
-                                    Open Google Maps
-                                </a>
-                            </div>
-                        </div>
+                <div class="info-line">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Contact Phone</strong>
+                        <p><a href="tel:+918955328904">+91 89553 28904</a></p>
                     </div>
                 </div>
 
+                <div class="info-line">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>Email Address</strong>
+                        <p><a href="mailto:anandlamoria064@gmail.com">anandlamoria064@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Get Directions Button -->
+                <div class="mt-4">
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Dr.+Anand+Lamoria+%7C+Best+Dermatologist+in+Jodhpur+%7C&destination_place_id=ChIJyxvPi7jdQTkRin19O7wYRPI"
+                        target="_blank" rel="noopener noreferrer" class="btn-main-primary btn-directions">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Exact Location Embedded Map -->
+            <div class="map-box reveal-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.627725904838!2d73.00451987625121!3d26.268366500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418db8bbcf21cb%3A0xf34418bc3b7d3a8a!2sDr.%20Anand%20Lamoria%20%7C%20Best%20Dermatologist%20in%20Jodhpur%20%7C!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    width="100%" height="360" style="border:0; border-radius:1rem;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </section>
+
+    <!-- Patient Booking Modal Popup -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeModalBtn">&times;</button>
+            <div class="modal-header">
+                <h3>Book Patient Consultation</h3>
+                <p>Fill basic details to send a structured appointment request to Dr. Anand Lamoria.</p>
+            </div>
+
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="pName">Patient Full Name *</label>
+                    <input type="text" id="pName" placeholder="e.g. Ramesh Kumar" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pPhone">Phone Number *</label>
+                        <input type="tel" id="pPhone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pAgeGender">Age & Gender *</label>
+                        <input type="text" id="pAgeGender" placeholder="e.g. 28 / Male" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pConcern">Treatment / Skin Concern *</label>
+                    <input type="text" id="pConcern" placeholder="Selected treatment will appear here" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pSlot">Preferred Date & Time Slot</label>
+                    <input type="text" id="pSlot" placeholder="e.g. Tomorrow Evening 5:00 PM">
+                </div>
+
+                <button type="submit" class="submit-btn-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Confirm & Send Details to Doctor
+                </button>
+            </form>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 text-slate-400 text-xs py-8 border-t border-slate-900">
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div>
-                <p class="font-semibold text-slate-300">Dr. Lamoria's Skin, Hair & Cosmetic Clinic — Dr. Anand Lamoria
-                    (MD)</p>
-                <p class="text-slate-500 mt-0.5">Sector-D, Shastri Nagar, Jodhpur, Rajasthan 342003</p>
+    <!-- Main Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-top section-padding-sm">
+            <div class="container">
+                <div class="footer-grid">
+
+                    <!-- Col 1: Doctor Profile & Socials -->
+                    <div class="footer-col footer-about-col">
+                        <h3 class="footer-brand-title">Dr. Anand Lamoria</h3>
+                        <p class="footer-brand-subtitle">MD Dermatologist & Dermatosurgeon</p>
+                        <p class="footer-text">
+                            Providing medical-grade skincare, advanced laser aesthetics, and precision hair
+                            restoration
+                            with evidence-based treatments in Jodhpur.
+                        </p>
+                        <div class="footer-socials">
+                            <a href="https://www.instagram.com/drlamoria_skincare/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Instagram" class="social-btn insta">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/anand.lamoria/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook" class="social-btn fb">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@drlamoriaskincare" target="_blank"
+                                rel="noopener noreferrer" aria-label="YouTube" class="social-btn yt">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="https://www.google.co.in/maps/place/Dr.+Anand+Lamoria+%7C+Best+Dermatologist+in+Jodhpur+%7C/@26.2693355,73.0039834,15z/data=!4m8!3m7!1s0x39418db8bbcf21cb:0xf34418bc3b7d3a8a!8m2!3d26.2683665!4d73.0070948!9m1!1b1!16s%2Fg%2F11kzz09k1r?entry=ttu"
+                                target="_blank" rel="noopener noreferrer" aria-label="Google Business"
+                                class="social-btn google">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Col 2: Quick Links -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Doctor</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Treatments</a></li>
+                            <li><a href="#reviews"><i class="fa-solid fa-angle-right"></i> Patient Reviews</a></li>
+                            <li><a href="#insta-feed"><i class="fa-solid fa-angle-right"></i> Social Gallery</a>
+                            </li>
+                            <li><a href="#location"><i class="fa-solid fa-angle-right"></i> Clinic Location</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3: Key Treatments -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Specializations</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Acne & Scar Therapy</a>
+                            </li>
+                            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Laser Hair Reduction</a>
+                            </li>
+                            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Micro-FUE Hair
+                                    Transplant</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Anti-Aging &
+                                    Anti-Wrinkle</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Clinical
+                                    Dermatosurgery</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 4: Full Contact Details -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Clinic Info</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <span>Govt Quarters, 3/2, near Ajeet Mal Bhandari Road, Sector-D, Shastri Nagar,
+                                    Jodhpur, RJ 342003</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone icon"></i>
+                                <a href="tel:+918955328904">+91 89553 28904</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope icon"></i>
+                                <a href="mailto:anandlamoria064@gmail.com">anandlamoria064@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-            <div class="text-center sm:text-right">
-                <p>© 2026 Dr. Anand Lamoria. All Rights Reserved.</p>
-                <p class="text-slate-600 mt-0.5">Designed & Developed for High Performance Care</p>
+        </div>
+
+        <!-- Bottom Copyright & Credit Bar -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright-text">© 2026 Dr. Anand Lamoria. All Rights Reserved.</p>
+                <p class="credit-text">
+                    Made with <i class="fa-solid fa-heart heart-pulse"></i> by
+                    <a href="https://www.instagram.com/webbuilds.jk/" target="_blank" rel="noopener noreferrer"
+                        class="developer-link">
+                        webbuilds.jk
+                    </a>
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Fixed Mobile Sticky Bottom Bar -->
-    <div
-        class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 sm:hidden shadow-2xl">
-        <div class="grid grid-cols-2 gap-3">
-            <a href="tel:+918955328904"
-                class="bg-slate-900 text-white font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow">
-                <i class="fa-solid fa-phone text-brand-400"></i> Call Clinic
-            </a>
-            <a href="https://wa.me/918955328904?text=Hello%20Dr.%20Anand%20Sir,%20I%20want%20to%20book%20an%20appointment."
-                target="_blank"
-                class="bg-emerald-600 text-white font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow">
-                <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
-            </a>
-        </div>
+    <!-- Mobile Bottom Sticky CTA Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+918955328904" class="btn-sticky-call" aria-label="Call Clinic">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <button type="button" class="btn-sticky-book" onclick="openBookingModal('Mobile Sticky Bar')">
+            <i class="fa-solid fa-calendar-check"></i> Book Appointment
+        </button>
     </div>
-
-    <!-- JavaScript Functions & Mobile Back Button Interceptor -->
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        let isMenuOpen = false;
-
-        // Open Menu Function with History State
-        function openMenu() {
-            mobileMenu.classList.remove('hidden');
-            menuIcon.className = 'fa-solid fa-xmark';
-            if (!isMenuOpen) {
-                isMenuOpen = true;
-                // Push history state so pressing back button closes the menu!
-                history.pushState({ menuOpen: true }, '');
-            }
-        }
-
-        // Close Menu Function
-        function closeMenu(fromPopState = false) {
-            mobileMenu.classList.add('hidden');
-            menuIcon.className = 'fa-solid fa-bars';
-            if (isMenuOpen) {
-                isMenuOpen = false;
-                if (!fromPopState && history.state && history.state.menuOpen) {
-                    history.back();
-                }
-            }
-        }
-
-        // Toggle Button Click Listener
-        menuBtn.addEventListener('click', () => {
-            if (mobileMenu.classList.contains('hidden')) {
-                openMenu();
-            } else {
-                closeMenu();
-            }
-        });
-
-        // Mobile Back Button Event Listener
-        window.addEventListener('popstate', (event) => {
-            if (isMenuOpen) {
-                closeMenu(true);
-            }
-        });
-
-        // WhatsApp Booking Form Integration
-        function sendWhatsAppBooking(e) {
-            e.preventDefault();
-            const name = document.getElementById('patient_name').value;
-            const phone = document.getElementById('patient_phone').value;
-            const service = document.getElementById('patient_service').value;
-            const date = document.getElementById('patient_date').value;
-
-            const message = `Hello Dr. Anand Sir,\n\nI would like to book a consultation at Dr. Lamoria's Clinic.\n\n` +
-                `*Patient Name:* ${name}\n` +
-                `*Phone Number:* ${phone}\n` +
-                `*Treatment:* ${service}\n` +
-                `*Preferred Date:* ${date}\n\n` +
-                `Please confirm the available time slot. Thank you!`;
-
-            const encodedMessage = encodeURIComponent(message);
-            const whatsappUrl = `https://wa.me/918955328904?text=${encodedMessage}`;
-
-            window.open(whatsappUrl, '_blank');
-        }
-
-        // FAQ Toggle Accordion
-        function toggleFaq(index) {
-            const ans = document.getElementById(`faq-ans-${index}`);
-            const icon = document.getElementById(`faq-icon-${index}`);
-
-            if (ans.classList.contains('hidden')) {
-                ans.classList.remove('hidden');
-                icon.className = 'fa-solid fa-chevron-up text-brand-700 text-sm';
-            } else {
-                ans.classList.add('hidden');
-                icon.className = 'fa-solid fa-chevron-down text-brand-700 text-sm';
-            }
-        }
-        // Hide preloader once whole page & CSS are fully loaded
-        window.addEventListener('load', function () {
-            const preloader = document.getElementById('preloader');
-            if (preloader) {
-                preloader.classList.add('opacity-0');
-                setTimeout(() => {
-                    preloader.style.display = 'none';
-                }, 500); // smooth fade-out animation
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
